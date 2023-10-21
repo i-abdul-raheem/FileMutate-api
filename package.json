@@ -2,7 +2,7 @@
   "name": "file-mutate-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/app.js",
   "scripts": {
     "start": "node ./src/app.js",
     "build": "echo \"Abdul Raheem this side. 3810361753177\""
