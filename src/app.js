@@ -10,9 +10,8 @@ app.use(express.json());
 app.use(fileUpload());
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, "../public")));
-
 app.use("/api/v1/", routes);
+app.use(express.static(path.join(__dirname, "../public")));
 
 if (process.env.NODE_ENV === "local") {
   app.listen(process.env.PORT || 5000, () => {
